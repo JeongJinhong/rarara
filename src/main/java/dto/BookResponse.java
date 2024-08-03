@@ -1,22 +1,22 @@
 package dto;
 
-import type.BookResult;
+import type.ReadResult;
 
 public class BookResponse {
-    BookResult bookResult;
+    ReadResult readResult;
     String Title;
 
-    public BookResponse(BookResult bookResult, String title) {
-        this.bookResult = bookResult;
+    public BookResponse(ReadResult readResult, String title) {
+        this.readResult = readResult;
         Title = title;
     }
 
-    public BookResult getBookResult() {
-        return bookResult;
+    public ReadResult getReadResult() {
+        return readResult;
     }
 
-    public void setBookResult(BookResult bookResult) {
-        this.bookResult = bookResult;
+    public void setReadResult(ReadResult readResult) {
+        this.readResult = readResult;
     }
 
     public String getTitle() {

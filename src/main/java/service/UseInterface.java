@@ -1,9 +1,9 @@
 package service;
 
-import type.Category;
+import type.ReadResult;
+import type.ReturnResult;
 
 public interface UseInterface {
-    Category getCategory();
-    public String Rent(String title);
-
+    ReadResult readBook(String Title);
+    ReturnResult returnBook(String Title);
 }

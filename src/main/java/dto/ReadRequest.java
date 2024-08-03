@@ -2,11 +2,11 @@ package dto;
 
 import type.Category;
 
-public class BookRequest {
+public class ReadRequest {
     Category category;
     String Title;
 
-    public BookRequest(Category category, String title) {
+    public ReadRequest(Category category, String title) {
         this.category = category;
         Title = title;
     }
