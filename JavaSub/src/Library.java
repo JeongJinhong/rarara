@@ -1,6 +1,6 @@
 public class Library extends User{
     String  customerName;
-    Book book = new Book();
+    BookServuce bookServuce = new BookServuce();
     @Override
     public void JoinLibrary(String name) {
         customerName = name;
@@ -8,7 +8,7 @@ public class Library extends User{
     }
     @Override
     public void ReadBook(String category, String bookTitle) {
-        book.ReadBook(category, bookTitle);
+        bookServuce.ReadBook(category, bookTitle);
     }
 
 }
