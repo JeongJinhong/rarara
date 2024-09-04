@@ -1,14 +1,22 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class User {
-    private String name;
-
-    public void JoinLibrary(String name){
-        Library lib = new Library();
-        lib.JoinLibrary(name);
+    private int userId;
+    private String userName;
+    List<Book> bookList = new ArrayList<>();
+    public int getId(){
+        return userId;
     }
 
-    public void ReadBook(String category, String bookTitle){
-        Library lib = new Library();
+    public void setUser(int id){
+
+        this.userId = id;
     }
 
+    public List<Book> readBooks(List<Book> books){
+        bookList.addAll(books);
+        return bookList;
+    }
 
 }
